@@ -1,4 +1,7 @@
 import jwt from "jsonwebtoken"
+import auth from '../middlewares/auth.js';
+import authMiddleware from '../middlewares/auth.js';
+
 
 const authMiddleware=async (req,res,next)=>{
     const {token}=req.headers;
