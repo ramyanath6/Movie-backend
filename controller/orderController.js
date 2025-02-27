@@ -1,4 +1,3 @@
-// import OrderModel from "../models/orderModel";
 // import userModel from "../models/userModel";
 import  { Stripe } from "stripe";
 
@@ -36,4 +35,4 @@ const placeOrder=async (req,res)=>{
     res.json(session)
 }
 
-export {placeOrder}
+export  default placeOrder

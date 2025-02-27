@@ -3,10 +3,10 @@ import cors from 'cors';
 import { connectDB } from './config/db.js';
 import movieRouter from './routes/movieroute.js';
 import userRouter from './routes/userrouter.js';
-import 'dotenv/config'
+// import 'dotenv/config'
 import dotenv from 'dotenv';
 import cartRouter from './routes/cartroute.js';
-import orderRouter from './routes/orderRouter.js';
+// import orderRouter from './routes/orderRouter.js';
 dotenv.config();
 
 const app=express();
@@ -22,7 +22,7 @@ connectDB();
 app.use('/api',movieRouter);
 app.use('/api/user',userRouter);
 app.use('/api/cart',cartRouter);
-app.use('/api/order',orderRouter);
+// app.use('/api/order',orderRouter);
 // app.use('/success',(req,res)=>{
 //     res.send('SuccessFull Payment')
 // })
